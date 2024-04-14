@@ -171,7 +171,7 @@ def main():
 
     for i in range(count):
         print("Start run: {} of {}".format(i+1, count))
-        train_loss = do_train(pre_trained_model, testing_dataloader, criterion , optimizer, device)
+        train_loss = do_train(pre_trained_model, training_dataloader, criterion , optimizer, device)
         print("Training Loss: {:.4f}".format(train_loss))
         val_loss, val_acc = do_test(pre_trained_model, validation_dataloader, criterion, device)
         print("Validation Loss: {:.4f} Validation Accuracy: {:.2f}%".format(val_loss, val_acc))
