@@ -159,7 +159,7 @@ def main():
         check_point_file_name = "pre_trained_model.pth"
 
     if os.path.isfile(check_point_file_name):
-        print("Training model is existed at {}, exiting...".format(check_point_file_name))
+        print("Training model is existed at {}, please remove the file and re-run again, exiting...".format(check_point_file_name))
         return
     else:
         print("Not found training model, start building...")
